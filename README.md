@@ -93,3 +93,8 @@ curl "http://localhost:3000/api/reports/generate?companyId=<companyId>&periodSta
 
 ## Lisans
 Bu proje MIT lisansı ile dağıtılmaktadır.
+
+## 📧 Contact
+
+Created by **Mehmet Tezcan** – [LinkedIn](https://www.linkedin.com/in/mehmet-tezcan-aa49159b/)
+Feel free to reach out!
