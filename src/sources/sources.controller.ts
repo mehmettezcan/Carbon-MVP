@@ -5,8 +5,10 @@ import { SourcesService } from './sources.service';
 @Controller('sources')
 export class SourcesController {
   constructor(private readonly service: SourcesService) {}
+
   @Post()
   create(@Body() dto: CreateSourceDto) { return this.service.create(dto); }
+
   @Get()
-  list(@Query('companyId') companyId: string) { return this.service.list(companyId); }
+  getSourcesByCompanyId(@Query('companyId') companyId: string) { return this.service.getSourcesByCompanyId(companyId); }
 }

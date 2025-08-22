@@ -12,8 +12,8 @@ export class CompaniesController {
   create(@Body() dto: CreateCompanyDto) { return this.companiesService.create(dto); }
 
   @Get()
-  getCompanies() { return this.companiesService.list(); }
+  getCompanies() { return this.companiesService.getCompanies(); }
 
   @Get(':id')
-  getCompanyById(@Param('id') id: string) { return this.companiesService.find(id); }
+  getCompanyById(@Param('id') id: string) { return this.companiesService.getCompanyById(id); }
 }

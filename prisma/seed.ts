@@ -1,5 +1,7 @@
 import { PrismaClient } from '@prisma/client';
+
 const prisma = new PrismaClient();
+
 async function main() {
   const company = await prisma.company.create({ data: { name: 'Acme A.Ş.', sector: 'metal' } });
   const elec = await prisma.emissionSource.create({
@@ -14,4 +16,5 @@ async function main() {
   });
   console.log('Seeded company:', company.id, 'source:', elec.id);
 }
+
 main().finally(() => prisma.$disconnect());

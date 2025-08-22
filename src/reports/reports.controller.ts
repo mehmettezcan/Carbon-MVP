@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post, Query, Res } from '@nestjs/common';
 import { ReportsService } from './reports.service';
-import { GenerateReportDto } from './dto';
+import { GenerateReportDto } from './dtos/generate_report.dto';
 import { Response } from 'express';
 import PDFDocument = require('pdfkit');
 import ExcelJS = require('exceljs');
